@@ -23,6 +23,16 @@ a{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .navbar .logo{
@@ -55,6 +65,10 @@ a{
     height: 100vh;
     padding: 60px 9% 0;
     color: #fff;
+     visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
 }
 
 .home-info h1{
@@ -165,7 +179,6 @@ a{
     width: 100%;
     height: 100%;
     background: #1f242d;
-    border: #ff6347 2px solid;
     animation: wave 1.5s infinite ease-in-out;
     transform: translateY(-100%);
     animation: showbars .3s ease-in-out forwards;
