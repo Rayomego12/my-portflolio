@@ -84,9 +84,9 @@ a{
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: 0.8px #ff6347;
-    animation: displayText 14s infinite;
-    animation-delay: calc(-5s* var(--i));
+    -webkit-text-stroke: 0.7px #ff6347;
+    animation: displayText 16s linear infinite;
+    animation-delay: calc(-4s* var(--i));
 }
 
  @keyframes displayText {
@@ -180,6 +180,15 @@ a{
     width: 500px;
     height: 500px;
     background: conic-gradient(transparent,transparent,transparent,#ff6347);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+@keyframes rotate-border {
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .home-img .img-box .img-item{
